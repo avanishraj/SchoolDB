@@ -28,15 +28,15 @@ public class Student {
             strategy = GenerationType.SEQUENCE,
             generator = "student_sequence"
     )
-    private Long StudentID;
-    private String FirstName;
-    private String LastName;
+    private Long studentID;
+    private String firstName;
+    private String lastName;
     @Column(
             name = "email_address",
             nullable = false
     )
     private String emailId;
-    private String guardianName;
-    private String guardianEmail;
-    private String guardianMobile;
+    @Embedded
+    private Guardian guardian;
+
 }
