@@ -1,7 +1,9 @@
 package com.avanish.springdatajpa.entity;
 
-import com.avanish.springdatajpa.repository.StudentRepository;
-import jakarta.persistence.*;
+import jakarta.persistence.AttributeOverride;
+import jakarta.persistence.AttributeOverrides;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
